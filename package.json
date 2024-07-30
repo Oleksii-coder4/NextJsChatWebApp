@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./server/server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server/index.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "express": "^4.19.2",
+    "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "socket.io": "^4.7.5"
   },
   "devDependencies": {
     "eslint": "^8",
